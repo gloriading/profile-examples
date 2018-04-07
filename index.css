@@ -1,0 +1,19 @@
+/* Universal Settings */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+* { box-sizing: border-box; }
+a { text-decoration: none !important; }
+
+div.whole-page {
+  min-height: 100vh;
+}
+
+.page2, .page4 {
+  background-color: pink;
+}
