@@ -11,9 +11,13 @@ html, body {
 a { text-decoration: none !important; }
 
 div.whole-page {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .page2, .page4 {
   background-color: pink;
+}
+
+img {
+  max-height:100%;
 }

@@ -11,7 +11,7 @@
       <h1>page 1</h1>
     </div>
     <div class="whole-page page2">
-      <h1>page 2</h1>
+      <img src="images/jane01.jpg" alt="" class="move-in-image">
     </div>
     <div class="whole-page page3">
       <h1>page 3</h1>
@@ -20,5 +20,17 @@
       <h1>page 4</h1>
     </div>
 
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.move-in-image', {
+      origin: 'right',
+      distance: '200px',
+      duration: 1000,
+        delay: 1000,
+        viewFactor: 0.3
+    });
+
+  </script>
   </body>
 </html>
