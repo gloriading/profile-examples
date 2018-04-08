@@ -14,10 +14,40 @@ div.whole-page {
   height: 100vh;
 }
 
+img {
+  max-height:100%;
+}
+
 .page2, .page4 {
   background-color: pink;
 }
+/* page 1 */
+.page1 {
+  background-color: RGB(199, 21, 133);
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 150px;
+}
 
-img {
-  max-height:100%;
+.page1 h1 {
+  margin: 0;
+  font-size: 100px;
+  font-family: monospace;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px black;
+}
+
+.page1 h4 {
+  font-size: 20px;
+}
+
+.page1 .fa-arrow-alt-circle-down {
+  font-size: 50px;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.page1 .fa-arrow-alt-circle-down:hover {
+  cursor: pointer;
+  opacity: 1;
 }
