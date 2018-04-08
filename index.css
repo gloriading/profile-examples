@@ -14,12 +14,14 @@ div.whole-page {
   height: 100vh;
 }
 
-.page2, .page4 {
+.page4 {
   background-color: pink;
 }
 /* page 1 */
 .page1 {
-  background-color: RGB(199, 21, 133);
+  background: #EF629F;
+  background: -webkit-linear-gradient(to top, #EF629F, #EECDA3); 
+  background: linear-gradient(to top, #EF629F, #EECDA3); 
   color: whitesmoke;
   text-align: center;
   padding-top: 150px;
@@ -49,6 +51,12 @@ div.whole-page {
 }
 
 /* page 2 */
+.page2 {
+  background: #EECDA3;
+  background: -webkit-linear-gradient(to bottom, #EF629F, #EECDA3);
+  background: linear-gradient(to bottom, #EF629F, #EECDA3);
+}
+
 .page2 .row {
   width: 100%;
   position: relative;
