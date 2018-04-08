@@ -14,10 +14,6 @@ div.whole-page {
   height: 100vh;
 }
 
-img {
-  max-height:100%;
-}
-
 .page2, .page4 {
   background-color: pink;
 }
@@ -48,6 +44,45 @@ img {
 }
 
 .page1 .fa-arrow-alt-circle-down:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* page 2 */
+.page2 .row {
+  width: 100%;
+  position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 200px;
+    right: 20px;
+    width: 70%;
+    background-color: RGBA(199, 21, 133, 0.5);
+    color: white;
+    padding: 30px;
+    font-size: 18px;
+    text-align: justify;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.page2 img {
+  max-height: 100vh;
+  z-index: -1;
+}
+
+.page2 .fa-arrow-alt-circle-down {
+  font-size: 50px;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  position: absolute;
+  left: 50%;
+  bottom:100px;
+  color: whitesmoke;
+}
+
+.page2 .fa-arrow-alt-circle-down:hover {
   cursor: pointer;
   opacity: 1;
 }
