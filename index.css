@@ -245,8 +245,50 @@ input[type=text] {
   background: #EECDA3;
   background: -webkit-linear-gradient(to bottom, #EF629F, #EECDA3);
   background: linear-gradient(to bottom, #EF629F, #EECDA3);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.contact-me {
+  text-align: center;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  font-family:monospace;
+}
+
+.contact-me h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.social-media-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  transform: rotate(30deg) translateX(20%);
+}
+
+@media only screen and (max-width: 600px) {
+    .icon {
+      transform: scale(0.8);
+      margin: 1px;
+    }
+}
+.fb { color: #3B5998; }
+.lin { color: #007bb5; }
+.ins { color: #125688; }
+.goo { color: #dd4b39; }
+.git { color: black; }
 /* scroll to top button */
 
 #myBtn {
