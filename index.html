@@ -13,6 +13,7 @@
       <h4>Web Developer</h4>
       <i class="fas fa-arrow-alt-circle-down"></i>
     </div>
+
     <div class="whole-page page2">
       <div class="row">
           <img src="images/jane01.jpg" alt="Jane Doe" class="move-in-image">
@@ -22,15 +23,21 @@
           <i class="fas fa-arrow-alt-circle-down"></i>
       </div>
     </div>
+
     <div class="whole-page page3">
-      <h1>page 3</h1>
+
     </div>
     <div class="whole-page page4">
       <h1>page 4</h1>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>
+  // Scroll to reveal image
     window.sr = ScrollReveal({ reset: true });
     sr.reveal('.move-in-image', {
       origin: 'right',
@@ -39,6 +46,29 @@
         delay: 1000,
         viewFactor: 0.3
     });
+
+  //Scroll to top button
+
+  window.onscroll = function() {scrollFunction()};
+  const upBtn = document.getElementById("myBtn");
+
+  function scrollFunction() {
+
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          upBtn.style.display = "block";
+      } else {
+          upBtn.style.display = "none";
+      }
+  }
+
+  upBtn.addEventListener('click', function(e){
+
+  });
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0;
+  }
 
   </script>
   </body>
