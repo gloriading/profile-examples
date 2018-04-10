@@ -40,7 +40,9 @@
         <a href="#" id="vol">VOLN</a>
         <a href="#" id="proj">PRJS</a>
       </div>
-      <div class="container">
+
+      <!-- work -->
+      <div class="container work">
         <!-- toolbar -->
         <div class="row">
           <div class="column left">
@@ -57,8 +59,8 @@
             </div>
           </div>
         </div>
-
-        <div class="content ">
+        <!-- browser content -->
+        <div class="content">
           <h3>
             2018
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
@@ -77,6 +79,109 @@
           </h3>
         </div>
       </div>
+      <!-- education -->
+      <div class="container education">
+        <!-- toolbar -->
+        <div class="row">
+          <div class="column left">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+          </div>
+          <div class="column middle">
+            <input type="text" value="http://www.EDUCATION.com">
+          </div>
+          <div class="column right">
+            <div style="float:right">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <!-- browser content -->
+        <div class="content">
+          <h3>
+            2017
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+          </h3>
+          <h3>
+            2015
+            <span>Ut enim ad minim veniam, quis nostrud exercitation.</span>
+          </h3>
+          <h3>
+            2010
+            <span>laboris nisi ut aliquip ex ea commodo consequat.</span>
+          </h3>
+        </div>
+      </div>
+      <!-- volunteer -->
+      <div class="container volunteer">
+        <!-- toolbar -->
+        <div class="row">
+          <div class="column left">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+          </div>
+          <div class="column middle">
+            <input type="text" value="http://www.VOLUNTEER.com">
+          </div>
+          <div class="column right">
+            <div style="float:right">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <!-- browser content -->
+        <div class="content">
+          <h3>
+            2018
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+          </h3>
+          <h3>
+            2017
+            <span>Ut enim ad minim veniam, quis nostrud exercitation.</span>
+          </h3>
+          <h3>
+            2016
+            <span>laboris nisi ut aliquip ex ea commodo consequat.</span>
+          </h3>
+        </div>
+      </div>
+      <!-- projects -->
+      <div class="container project">
+        <!-- toolbar -->
+        <div class="row">
+          <div class="column left">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+          </div>
+          <div class="column middle">
+            <input type="text" value="http://www.PROJECTS.com">
+          </div>
+          <div class="column right">
+            <div style="float:right">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <!-- browser content -->
+        <div class="content">
+          <h3>
+            2018
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+          </h3>
+          <h3>
+            2016-17
+            <span>Ut enim ad minim veniam, quis nostrud exercitation.</span>
+          </h3>
+          <h3>
+            2015-16
+            <span>laboris nisi ut aliquip ex ea commodo consequat.</span>
+          </h3>
+        </div>
+      </div>
+
 
       <a href="#page4">
         <i class="fas fa-arrow-alt-circle-down"></i>
@@ -85,7 +190,7 @@
 
     <div class="whole-page page4" id="page4">
       <div class="contact-me">
-        <h1>contact Jane</h1>
+        <h1>contact Jane <i class="far fa-smile"></i></h1>
       </div>
       <div class="social-media-container">
         <div class="fb icon">
@@ -148,18 +253,66 @@
       }
   }
 
-  // smoothly move to linking section
+  // jQuery ---------------------------------------
+  $( document ).ready(function() {
+    // smoothly move to linking section
 
-  $('a[href^="#"]').on('click', function(e) {
-      var target = $(this.getAttribute('href'));
-      if( target.length ) {
-          e.preventDefault();
-          $('html, body').stop().animate({
-              scrollTop: target.offset().top
-          }, 1000);
-      }
+    $('a[href^="#"]').on('click', function(e) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            e.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+
+    // browser container
+    const workContainer = $('.work');
+    const eduContainer = $('.education');
+    const volContainer = $('.volunteer');
+    const proContainer = $('.project');
+    const btnWork = $('#work');
+    const btnEdu = $('#edu');
+    const btnVol = $('#vol');
+    const btnPro = $('#proj');
+
+    workContainer.hide();
+    volContainer.hide();
+    proContainer.hide();
+
+    btnWork.click(function(e){
+      e.preventDefault();
+      workContainer.show();
+      eduContainer.hide();
+      volContainer.hide();
+      proContainer.hide();
+    });
+    btnEdu.click(function(e){
+      e.preventDefault();
+      eduContainer.show();
+      workContainer.hide();
+      volContainer.hide();
+      proContainer.hide();
+    });
+    btnVol.click(function(e){
+      e.preventDefault();
+      volContainer.show();
+      eduContainer.hide();
+      workContainer.hide();
+      proContainer.hide();
+    });
+    btnPro.click(function(e){
+      e.preventDefault();
+      proContainer.show();
+      volContainer.hide();
+      eduContainer.hide();
+      workContainer.hide();
+    });
+
+
+
   });
-
   </script>
   </body>
 </html>
