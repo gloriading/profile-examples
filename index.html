@@ -8,6 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <title>Resume Sample Templates</title>
     <style>
+      @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
       html, body {
         margin: 0;
         padding: 0;
@@ -15,7 +16,8 @@
         width: 100%;
       }
       body {
-        background-color: whitesmoke;
+        background-color: black;
+        color: white;
       }
       * { box-sizing: border-box; }
       a {
@@ -30,14 +32,16 @@
         text-align: center;
         letter-spacing: 2px;
         font-size: 20px;
-        font-family: monospace;
+        font-family: 'Berkshire Swash', cursive;
       }
+
       main {
         height: 70%;
         width: 100%;
         display: flex;
         justify-content: center;
       }
+
       .cell {
         width: 100px;
         height: 100px;
@@ -50,10 +54,13 @@
         line-height: 100px;
         transition: 0.5s ease;
       }
-      .cell:hover{
-        transform: scale(1.5) translateY(50px);
-        border: 1px red solid;
+
+      .cell:hover {
+        font-size: 30px;
+        color: white;
+        width: 50px;
       }
+
       footer {
         height: 10%;
         width: 100%;
