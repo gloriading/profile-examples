@@ -11,7 +11,21 @@
 
     </header>
     <section class="split second">
-
+      <button id="flip">
+        <i class="far fa-hand-rock fa-2x"></i>
+      </button>
+      <div id="card">
+        <div class="front">
+          <div class="inner-container">
+            <h1> FRONT </h1>
+          </div>
+        </div>
+        <div class="back">
+           <div class="inner-container">
+             <h2>BACK</h2>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="split third">
 
@@ -19,5 +33,17 @@
     <footer class="split">
 
     </footer>
+
+    <script>
+    const card = document.getElementById('card');
+
+    document.getElementById('flip').addEventListener('click', function(){
+        if(card.classList.contains('flipped')){
+          card.classList.remove('flipped');
+        } else {
+          card.classList.add('flipped');
+        }
+    })
+    </script>
   </body>
 </html>
