@@ -10,3 +10,39 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.split {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+
+.first {
+  height: 20%;
+  top: 0;
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
+.second {
+  height: 35%;
+  top: 20%;
+  over-flow: scroll;
+  background-color: pink;
+}
+
+.third {
+  height: 35%;
+  top: 55%;
+  over-flow: scroll;
+  background-color: orange;
+}
+
+footer {
+  height: 10%;
+  top:90%;
+  background-color: green;
+}
