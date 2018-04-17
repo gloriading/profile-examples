@@ -95,7 +95,7 @@ header.split {
     100% { color: white; }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .title h1 { font-size: 1.5rem; }
 }
 
@@ -120,6 +120,12 @@ header.split {
 @keyframes showPosition {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+.title span { transition: 0.3s ease; }
+.title span:hover {
+  color: orange;
+  cursor: pointer;
 }
 
 /* flip this section */
@@ -192,14 +198,56 @@ button:hover {
 
 /* -------------------------------------- */
 .third {
-  height: 35%;
+  height: 45%;
   top: 55%;
-  over-flow: scroll;
   background-color: orange;
 }
 
-footer {
-  height: 10%;
-  top:90%;
-  background-color: green;
+.third div {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border: 1px white solid;
+  padding: 10px 30px;
+  overflow: scroll;
+}
+
+.hello-box {
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-box, .portfolio-box, .education-box {
+  display: none;
+}
+
+.about-box p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.showBox { display: block; }
+
+.quote {
+  padding-left: 10px;
+  border-left: 3px solid black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fa-battery-full {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  animation: shake 5s infinite ease alternate;
+}
+
+@keyframes shake {
+  0%   { transform: rotate(20deg);}
+  50%  { transform: rotate(0deg);}
+  75%  { transform: rotate(-20deg);}
+  100% { transform: rotate(0deg);}
 }

@@ -12,7 +12,17 @@
         <h1> Rick Grime
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i> </a>
         </h1>
-        <p> web developer</p>
+        <p> web developer
+          <span id="about">
+            <i class="fas fa-battery-quarter fa-lg"></i>
+          </span>
+          <span id="portfolio">
+            <i class="fas fa-battery-half fa-lg"></i>
+          </span>
+          <span id="education">
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+          </span>
+        </p>
         <div class="bg one"></div>
         <div class="bg two"></div>
       </div>
@@ -33,13 +43,25 @@
       </div>
     </section>
     <section class="split third">
-
+      <div class="hello-box">
+        <h2>Hi there. Click on the <i class="fas fa-battery-full"></i> on top to proceed.</h2>
+      </div>
+      <div class="about-box">
+        <h4 class="quote"> Rick, who focus. </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+      </div>
+      <div class="portfolio-box">
+        <h4 class="quote"> Rick, who creates. </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+      </div>
+      <div class="education-box">
+        <h4 class="quote"> Rick, who learns. </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+      </div>
     </section>
-    <footer class="split">
-
-    </footer>
 
     <script>
+    // Flip images
     const card = document.getElementById('card');
 
     document.getElementById('flip').addEventListener('click', function(){
@@ -49,6 +71,43 @@
           card.classList.add('flipped');
         }
     })
+
+    // Show content
+    const allBtn = document.querySelectorAll('.title span');
+    const allBox = document.querySelectorAll('.third div');
+
+
+    allBtn.forEach(btn => {
+      btn.addEventListener('click', function(e){
+
+        // make hello messages disappear
+        document.querySelector('.hello-box').style.display = "none";
+
+        // remove all previous content first
+        allBox.forEach(box => {
+          box.classList.remove('showBox');
+        });
+
+         let target = e.currentTarget.getAttribute('id');
+         let targetBox = document.querySelector(`.${target}-box`);
+        if(targetBox.classList.contains('showBox')){
+          targetBox.classList.remove('showBox');
+        } else {
+          targetBox.classList.add('showBox');
+        }
+      });
+
+
+
+    })
+// let target = btn.getAttribute('id')
+    // aboutBtn.addEventListener('click', function(){
+    //   if(aboutBox.classList.contains('showBox')){
+    //     aboutBox.classList.remove('showBox');
+    //   } else {
+    //     aboutBox.classList.add('showBox');
+    //   }
+    // });
     </script>
   </body>
 </html>
