@@ -121,6 +121,7 @@ header.split {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 /* flip this section */
 .second {
   height: 35%;
@@ -148,15 +149,20 @@ header.split {
   backface-visibility: hidden;
 }
 
-#card .front {
+.front .inner-container {
   background-image: url('https://images.pexels.com/photos/157928/young-man-male-handsome-model-attractive-157928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back .inner-container {
+  background-image: url('https://images.pexels.com/photos/548084/pexels-photo-548084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #card .back {
-  background-color: orange;
   transform: rotateY( 180deg );
 }
 
@@ -183,6 +189,7 @@ button:hover {
   border: 1px solid white;
   color: white;
 }
+
 /* -------------------------------------- */
 .third {
   height: 35%;
