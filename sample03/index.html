@@ -90,24 +90,18 @@
 
          let target = e.currentTarget.getAttribute('id');
          let targetBox = document.querySelector(`.${target}-box`);
-        if(targetBox.classList.contains('showBox')){
-          targetBox.classList.remove('showBox');
-        } else {
-          targetBox.classList.add('showBox');
-        }
+         targetBox.classList.toggle('showBox');
+        // if(targetBox.classList.contains('showBox')){
+        //   targetBox.classList.remove('showBox');
+        // } else {
+        //   targetBox.classList.add('showBox');
+        // }
       });
 
 
 
     })
-// let target = btn.getAttribute('id')
-    // aboutBtn.addEventListener('click', function(){
-    //   if(aboutBox.classList.contains('showBox')){
-    //     aboutBox.classList.remove('showBox');
-    //   } else {
-    //     aboutBox.classList.add('showBox');
-    //   }
-    // });
+
     </script>
   </body>
 </html>
