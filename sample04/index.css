@@ -30,6 +30,7 @@ button {
   font-family: 'Gaegu', cursive;
   border: 0;
   color: white;
+  box-shadow: 0 0 5px rgba(255,255,255,0.8);
 }
 
 button:first-of-type {
@@ -40,6 +41,9 @@ button:nth-of-type(2) {
 }
 button:nth-of-type(3) {
   background-color: #0984e3;
+}
+button:nth-of-type(4) {
+  background-color: #f0932b;
 }
 
 button:hover {
@@ -70,7 +74,7 @@ button:hover {
   transition: 0.5s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-.close-about, .close-work, .close-education {
+.close-about, .close-work, .close-education, .close-portfolio {
   position: absolute;
   right: 20px;
   top:20px;
@@ -78,7 +82,7 @@ button:hover {
   transition: 0.5s ease;
 }
 
-.close-about:hover, .close-work:hover, .close-education:hover {
+.close-about:hover, .close-work:hover, .close-education:hover, .close-portfolio:hover {
   cursor: pointer;
   transform: scale(0.9);
 }
@@ -109,6 +113,10 @@ button:hover {
 
 .bio img:hover {
   opacity: 1;
+}
+
+.bio a:hover {
+  color: rgba(255,255,255,0.7);
 }
 
 .content-box h2 {
@@ -145,6 +153,23 @@ button:hover {
   font-size: 25px;
   overflow-x: hidden;
   transition: 0.8s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+/*  overlay from upper-left  */
+.overlay-portfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  background-color: #f0932b;
+  color: black;
+  font-family: arial;
+  font-size: 25px;
+  overflow-x: hidden;
+  transition:
+  width 1s cubic-bezier(.87,-.41,.19,1.44),
+  height 1.3s cubic-bezier(.87,-.41,.19,1.44);
 }
 
 

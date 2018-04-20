@@ -11,6 +11,7 @@
       <button class="toggle-about"> B </button>
       <button class="toggle-work"> W </button>
       <button class="toggle-education"> E </button>
+      <button class="toggle-portfolio"> P </button>
 
       <div class="main-content">
         <i class="fas fa-child fa-10x"></i>
@@ -25,6 +26,12 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
+          <div class="links">
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-google fa-2x"></i></a>
+          </div>
         </div>
     </div>
 
@@ -43,6 +50,17 @@
       <span class="close-education"><i class="fas fa-times fa-lg"></i></span>
         <div class="content-box education">
           <h2> education & training </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+    </div>
+
+
+    <div class="overlay-portfolio">
+      <span class="close-portfolio"><i class="fas fa-times fa-lg"></i></span>
+        <div class="content-box portfolio">
+          <h2> portfolio </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
@@ -90,6 +108,22 @@
   closeBtnEdu.addEventListener('click', function(e){
     overlayEdu.style.width = "0";
   });
+
+  // from upper-left
+  const openBtnPo = document.querySelector('.toggle-portfolio');
+  const overlayPo = document.querySelector('.overlay-portfolio');
+  const closeBtnPo = document.querySelector('.close-portfolio');
+
+  openBtnPo.addEventListener('click', function(e){
+    overlayPo.style.width = "100%";
+    overlayPo.style.height = "100%";
+  });
+
+  closeBtnPo.addEventListener('click', function(e){
+    overlayPo.style.width = "0";
+    overlayPo.style.height = "0";
+  });
+
   </script>
 
   </body>
