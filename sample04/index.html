@@ -8,9 +8,9 @@
   </head>
   <body>
     <main>
-      <button class="toggle-about">
-        A
-      </button>
+      <button class="toggle-about"> B </button>
+      <button class="toggle-work"> W </button>
+
 
       <div class="main-content">
         <i class="fas fa-child fa-10x"></i>
@@ -18,7 +18,7 @@
     </main>
 
     <div class="overlay-about">
-      <span class="close"><i class="fas fa-times fa-lg"></i></span>
+      <span class="close-about"><i class="fas fa-times fa-lg"></i></span>
         <div class="content-box bio">
           <h2> NAKAMURA  </h2>
           <img src="images/nakamura01.jpeg" alt="">
@@ -29,20 +29,46 @@
     </div>
 
 
+    <div class="overlay-work">
+      <span class="close-work"><i class="fas fa-times fa-lg"></i></span>
+        <div class="content-box work">
+          <h2> Work History </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+    </div>
+
+
   <script>
 
+  // from left to right
   const openBtnAbout = document.querySelector('.toggle-about');
   const overlayAbout = document.querySelector('.overlay-about');
-  const cloasBtn = document.querySelector('.close');
-
+  const closeBtnAbout = document.querySelector('.close-about');
 
   openBtnAbout.addEventListener('click', function(e){
     overlayAbout.style.width = "100%";
   });
 
-  cloasBtn.addEventListener('click', function(e){
+  closeBtnAbout.addEventListener('click', function(e){
     overlayAbout.style.width = "0";
   });
+
+  // from top to bottom
+  const openBtnWork = document.querySelector('.toggle-work');
+  const overlayWork = document.querySelector('.overlay-work');
+  const closeBtnWork = document.querySelector('.close-work');
+
+  openBtnWork.addEventListener('click', function(e){
+    overlayWork.style.height = "100%";
+  });
+
+  closeBtnWork.addEventListener('click', function(e){
+    overlayWork.style.height = "0";
+  });
+
+  // from right to left
 
   </script>
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Gochi+Hand');
 
 html, body {
   margin: 0;
@@ -23,15 +23,18 @@ button {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  margin: 20px;
+  margin: 20px 5px;
   outline: none;
   float: right;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Gaegu', cursive;
+  background-color: inherit;
+  border: 3px solid white;
 }
 
 button:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 5px gray;
+  font-size: 25px;
 }
 
 .main-content {
@@ -41,13 +44,15 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
+/*  overlay from left */
+
 .overlay-about {
   position: absolute;
   top:0;
   left:0;
   width: 0;
   height: 100%;
-  background-color: rgba(0,0,0,1);
+  background-color: #2d3436;
   color: white;
   font-family: arial;
   font-size: 25px;
@@ -55,7 +60,7 @@ button:hover {
   transition: 0.5s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-.close {
+.close-about, .close-work {
   position: absolute;
   right: 20px;
   top:20px;
@@ -63,7 +68,7 @@ button:hover {
   transition: 0.5s ease;
 }
 
-.close:hover {
+.close-about:hover, .close-work:hover {
   cursor: pointer;
   transform: scale(0.9);
 }
@@ -96,10 +101,27 @@ button:hover {
   opacity: 1;
 }
 
-.bio h2 {
+.content-box h2 {
   font-family: 'Gochi Hand', cursive;
   letter-spacing: 3px;
 }
+
+/*  overlay from top  */
+.overlay-work {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 0;
+  background-color: #00b894;
+  color: black;
+  font-family: arial;
+  font-size: 25px;
+  overflow-x: hidden;
+  transition: 0.5s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+
 
 a.link {
   display: block;
