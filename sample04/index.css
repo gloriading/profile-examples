@@ -28,8 +28,18 @@ button {
   float: right;
   font-size: 20px;
   font-family: 'Gaegu', cursive;
-  background-color: inherit;
-  border: 3px solid white;
+  border: 0;
+  color: white;
+}
+
+button:first-of-type {
+  background-color: #2d3436;
+}
+button:nth-of-type(2) {
+  background-color: #00b894;
+}
+button:nth-of-type(3) {
+  background-color: #0984e3;
 }
 
 button:hover {
@@ -60,7 +70,7 @@ button:hover {
   transition: 0.5s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-.close-about, .close-work {
+.close-about, .close-work, .close-education {
   position: absolute;
   right: 20px;
   top:20px;
@@ -68,7 +78,7 @@ button:hover {
   transition: 0.5s ease;
 }
 
-.close-about:hover, .close-work:hover {
+.close-about:hover, .close-work:hover, .close-education:hover {
   cursor: pointer;
   transform: scale(0.9);
 }
@@ -119,6 +129,22 @@ button:hover {
   font-size: 25px;
   overflow-x: hidden;
   transition: 0.5s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+
+/*  overlay from right  */
+.overlay-education {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #0984e3;
+  color: black;
+  font-family: arial;
+  font-size: 25px;
+  overflow-x: hidden;
+  transition: 0.8s cubic-bezier(.87,-.41,.19,1.44);
 }
 
 

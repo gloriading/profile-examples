@@ -10,7 +10,7 @@
     <main>
       <button class="toggle-about"> B </button>
       <button class="toggle-work"> W </button>
-
+      <button class="toggle-education"> E </button>
 
       <div class="main-content">
         <i class="fas fa-child fa-10x"></i>
@@ -33,6 +33,16 @@
       <span class="close-work"><i class="fas fa-times fa-lg"></i></span>
         <div class="content-box work">
           <h2> Work History </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+    </div>
+
+    <div class="overlay-education">
+      <span class="close-education"><i class="fas fa-times fa-lg"></i></span>
+        <div class="content-box education">
+          <h2> education & training </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
@@ -69,7 +79,17 @@
   });
 
   // from right to left
+  const openBtnEdu = document.querySelector('.toggle-education');
+  const overlayEdu = document.querySelector('.overlay-education');
+  const closeBtnEdu = document.querySelector('.close-education');
 
+  openBtnEdu.addEventListener('click', function(e){
+    overlayEdu.style.width = "100%";
+  });
+
+  closeBtnEdu.addEventListener('click', function(e){
+    overlayEdu.style.width = "0";
+  });
   </script>
 
   </body>
