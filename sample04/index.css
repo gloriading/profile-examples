@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -18,12 +20,13 @@ main {
 }
 
 button {
-  width:50px;
-  height:50px;
-  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
   margin: 20px;
   outline: none;
   float: right;
+  font-size: 18px;
 }
 
 button:hover {
@@ -54,8 +57,8 @@ button:hover {
 
 .close {
   position: absolute;
-  right: 10px;
-  top:10px;
+  right: 20px;
+  top:20px;
   color: white;
   transition: 0.5s ease;
 }
@@ -67,16 +70,35 @@ button:hover {
 
 .content-box {
   position: relative;
-  top: 25%;
-  height: 100%;
+  top: 10%;
+  height: 90%;
   width: 100%;
-  text-align: center;  
-  border: 1px white dashed;
-  padding: 20px 30px;
+  text-align: center;
+  padding: 20px 40px;
 }
 
 .content-box p {
   text-align: justify;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.bio img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+  transition: 2s ease;
+}
+
+.bio img:hover {
+  opacity: 1;
+}
+
+.bio h2 {
+  font-family: 'Gochi Hand', cursive;
+  letter-spacing: 3px;
 }
 
 a.link {
