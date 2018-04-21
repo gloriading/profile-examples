@@ -1,5 +1,5 @@
 # ✸ Single-page Resume
-## ▷ Created with HTML, CSS, jQuery
+## ▷ Created with HTML, CSS, JavaScript, jQuery
 
 ![Alt text](/sample01/images/resume01.png?raw=true "resume")
 
