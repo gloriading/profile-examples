@@ -12,6 +12,7 @@
       <button class="toggle-work"> W </button>
       <button class="toggle-education"> E </button>
       <button class="toggle-portfolio"> P </button>
+      <button class="toggle-welcome"> ? </button>
 
       <div class="main-content">
         <i class="fas fa-child fa-10x"></i>
@@ -19,7 +20,7 @@
     </main>
 
     <div class="overlay-about">
-      <span class="close-about"><i class="fas fa-times fa-lg"></i></span>
+      <span class="close-about"><i class="fas fa-times"></i></span>
         <div class="content-box bio">
           <h2> NAKAMURA  </h2>
           <img src="images/nakamura01.jpeg" alt="">
@@ -37,7 +38,7 @@
 
 
     <div class="overlay-work">
-      <span class="close-work"><i class="fas fa-times fa-lg"></i></span>
+      <span class="close-work"><i class="fas fa-times"></i></span>
         <div class="content-box work">
           <h2> Work History </h2>
           <p>
@@ -47,7 +48,7 @@
     </div>
 
     <div class="overlay-education">
-      <span class="close-education"><i class="fas fa-times fa-lg"></i></span>
+      <span class="close-education"><i class="fas fa-times"></i></span>
         <div class="content-box education">
           <h2> education & training </h2>
           <p>
@@ -58,12 +59,19 @@
 
 
     <div class="overlay-portfolio">
-      <span class="close-portfolio"><i class="fas fa-times fa-lg"></i></span>
+      <span class="close-portfolio"><i class="fas fa-times"></i></span>
         <div class="content-box portfolio">
           <h2> portfolio </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
+        </div>
+    </div>
+
+    <div class="overlay-welcome">
+        <div class="content-box welcome">
+          <span class="close-welcome"><i class="fas fa-times"></i></span>
+          <h2> hi there, welcome to my website </h2>
         </div>
     </div>
 
@@ -124,6 +132,18 @@
     overlayPo.style.height = "0";
   });
 
+  // from bottom to middle
+  const openBtnWel = document.querySelector('.toggle-welcome');
+  const overlayWel = document.querySelector('.overlay-welcome');
+  const closeBtnWel = document.querySelector('.close-welcome');
+
+  openBtnWel.addEventListener('click', function(e){
+    overlayWel.style.width = "80%";
+  });
+
+  closeBtnWel.addEventListener('click', function(e){
+    overlayWel.style.width = "0";
+  });
   </script>
 
   </body>

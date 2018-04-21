@@ -45,6 +45,9 @@ button:nth-of-type(3) {
 button:nth-of-type(4) {
   background-color: #f0932b;
 }
+button:nth-of-type(5) {
+  background-color: #82589F;
+}
 
 button:hover {
   cursor: pointer;
@@ -74,15 +77,19 @@ button:hover {
   transition: 0.5s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-.close-about, .close-work, .close-education, .close-portfolio {
+.close-about, .close-work, .close-education, .close-portfolio, .close-welcome {
   position: absolute;
   right: 20px;
   top:20px;
   color: white;
+  border: 5px solid white;
+  padding: 10px;
   transition: 0.5s ease;
 }
 
-.close-about:hover, .close-work:hover, .close-education:hover, .close-portfolio:hover {
+.close-about:hover, .close-work:hover, .close-education:hover, .close-portfolio:hover,
+.close-welcome:hover
+ {
   cursor: pointer;
   transform: scale(0.9);
 }
@@ -124,6 +131,13 @@ button:hover {
   letter-spacing: 3px;
 }
 
+.content-box.welcome {
+    padding: 10px 20px;
+}
+
+.content-box.welcome .close-welcome {
+
+}
 /*  overlay from top  */
 .overlay-work {
   position: absolute;
@@ -172,18 +186,20 @@ button:hover {
   height 1.3s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-
-
-a.link {
-  display: block;
-  margin: 10px;
-  text-decoration: none;
-  color: rgba(255,255,255,0.7);
-  transition: 0.5s ease;
-}
-
-a.link:hover {
-  letter-spacing: 1px;
-  color: rgba(255,255,255,1);
-  transform: scale(1.5);
+/*  overlay welcome  */
+.overlay-welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(130, 88, 159,0.7);
+  color: black;
+  font-family: arial;
+  font-size: 25px;
+  overflow-x: hidden;
+  transition:
+  width 1s cubic-bezier(.87,-.41,.19,1.44),
+  height 1.3s cubic-bezier(.87,-.41,.19,1.44);
 }
