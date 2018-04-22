@@ -254,3 +254,94 @@ h1.end {
   text-align: left;
   margin: -50px 0 0 60%;
 }
+
+/* portfolio */
+
+.main-flex {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 0 0 10px white;
+}
+
+.inner {
+  transition: 1s ease;
+  cursor: pointer;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  z-index: 2;
+  border-top: 2px solid maroon;
+  border-bottom: 2px solid maroon;
+}
+
+.heading h1 {
+  font-size: 30px;
+  font-family: 'Gaegu', cursive;
+  margin: 0;
+}
+
+.content h3 {
+  font-size: 25px;
+  font-weight: 200;
+}
+.content p {
+  text-align: center;
+}
+
+.content {
+  z-index: 2;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  transition: 1s ease;
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.inner:hover {
+  flex: 2;
+}
+
+.inner:hover .content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.one {
+  background-image: url('images/p-01.jpg');
+}
+.two {
+  background-image: url('images/p-02.jpg');
+}
+.three {
+  background-image: url('images/p-03.jpg');
+}
+.four {
+  background-image: url('images/p-04.jpg');
+}
+.five {
+  background-image: url('images/p-05.jpg');
+}
