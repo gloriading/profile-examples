@@ -31,6 +31,7 @@ button {
   border: 0;
   color: white;
   box-shadow: 0 0 5px rgba(255,255,255,0.8);
+  transition: 0.5s ease;
 }
 
 button:first-of-type {
@@ -51,7 +52,7 @@ button:nth-of-type(5) {
 
 button:hover {
   cursor: pointer;
-  font-size: 25px;
+  transform: scale(5) translate(-20%,40%);
 }
 
 .main-content {
