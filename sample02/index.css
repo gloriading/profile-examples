@@ -79,28 +79,36 @@ a {
 
 .cell {
   width: calc(100%/2 - 20px);
-  min-height: 100px;
+  height: 200px;
   font-size: 30px;
   text-align: center;
   padding-top: 30px;
   border: 1px black solid;
   margin: 2px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition:
-    background-color 1s ease,
     border 0.5s ease,
     transform 0.5s ease
     ;
 }
+.photo {
+    background-image: url('images/p-photo.jpeg');
+}
+.music {
+    background-image: url('images/p-music.jpg');
+}
+.game {
+    background-image: url('images/p-game.jpeg');
+}
+.drive {
+    background-image: url('images/p-drive.jpeg');
+}
 .cell:hover {
   cursor: pointer;
-  background-color: white;
   border:0;
   transform: translateY(-20px);
-}
-.icon { transition: 0.5s ease; }
-
-.cell:hover .icon {
-  transform: rotate(60deg);
 }
 
 /* next page icon */
