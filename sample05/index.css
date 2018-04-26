@@ -23,6 +23,7 @@ header h1 {
   margin: 20px 50px;
   font-family: 'Merienda One', cursive;
   color: white;
+  font-size: 50px;
   text-shadow: 1px 1px 5px rgba(89, 98, 117, 0.8);
 }
 
@@ -45,15 +46,14 @@ header h1 {
   text-transform: uppercase;
 }
 
-
-.content {
-  padding: 16px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
+}
+
+.sticky + main {
+  padding-top: 60px;
 }
 
 /* main */
@@ -142,6 +142,22 @@ header h1 {
   color: rgba(48, 57, 82,1.0);
 }
 
+/* photos */
+#photos {
+  padding-top: 60px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  background-color: rgba(243, 166, 131,1.0);
+}
 
-
+#photos .box {
+    margin: 5px;
+    width: 300px;
+    height: 240px;
+    border: 1px solid black;
+}
 /*  */
