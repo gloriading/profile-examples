@@ -1,0 +1,105 @@
+html,body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*------------- header ------------*/
+
+header {
+  height: 100vh;
+  text-align: center;
+  border: 1px solid;
+  position: relative;
+}
+header h1:first-of-type {
+  margin-top: 40vh;
+}
+
+
+/*------------- navBar ------------*/
+nav {
+  display: flex;
+  justify-content:space-around;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.links {
+  display: flex;
+  justify-content:center;
+}
+.logo {
+  padding: 16px;
+  font-size: 1.2em;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+a.nav-link {
+  display: block;
+  padding: 18px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  transition: 0.3s ease;
+}
+a.nav-link:hover {
+  background-color: rgba(0,0,0,0.6);
+  color: rgba(255,255,255,0.8);
+}
+
+
+/*------------- about ------------*/
+section#about, section#projects, section#contact {
+  min-height: 100vh;
+  padding: 60px;
+  border: 1px solid;
+}
+
+.about-me p {
+  line-height: 2em;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+/*------------- projects ------------*/
+.my-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cell {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid red;
+  transition: 0.2s;
+}
+.cell:hover {
+  transform: translateY(-10px);
+}
+
+
+
+
+
+
+/*------------- media queries  ------------*/
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  .links {
+    justify-content: flex-start;
+  }
+  a.nav-link {
+    flex: 1;
+    text-align: center;
+  }
+}
