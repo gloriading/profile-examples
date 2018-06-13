@@ -61,7 +61,9 @@ a.nav-link:hover {
 }
 
 /*------------- about ------------*/
-section#about, section#projects, section#contact {
+section#about,
+section#projects,
+section#contact {
   min-height: 100vh;
   padding: 60px;
   border: 1px solid;
@@ -79,19 +81,43 @@ section#about, section#projects, section#contact {
   flex-wrap: wrap;
 }
 .cell {
-  width: 150px;
-  height: 150px;
+  flex: 1;
+  height: 200px;
   margin: 10px;
   border: 1px solid rgba(0,0,0,0.4);
-  transition: 0.2s;
+  transition: 1s;
 }
 .cell:hover {
-  transform: translateY(-10px);
+  flex: 5;
 }
 
 
-
-
+/*------------- contact ------------*/
+.contact-me {
+  display: flex;
+  align-items: stretch;
+}
+.left, .right {
+  flex: 1;
+  height: 80vh;
+}
+.left {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  text-align: center;
+}
+.left h2 {
+  margin-top: 30vh;
+}
+.left a {
+  display:inline-block;
+  color: white;
+  font-size: 3em;
+  transition: 0.5s;
+}
+.left a:hover {
+  transform: translateY(-10px);
+}
 
 
 /*------------- media queries  ------------*/
