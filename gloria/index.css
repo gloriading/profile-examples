@@ -54,7 +54,11 @@ a.nav-link:hover {
   background-color: rgba(0,0,0,0.6);
   color: rgba(255,255,255,0.8);
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
 /*------------- about ------------*/
 section#about, section#projects, section#contact {
@@ -78,7 +82,7 @@ section#about, section#projects, section#contact {
   width: 150px;
   height: 150px;
   margin: 10px;
-  border: 1px solid red;
+  border: 1px solid rgba(0,0,0,0.4);
   transition: 0.2s;
 }
 .cell:hover {

@@ -15,7 +15,7 @@
       <h1>Hello, I am Gloria Ding.</h1>
       <p>A person who finds creating webpages interesting.</p>
     </header>
-    <nav>
+    <nav id="navbar">
       <div class="logo">
         Gloria Ding
       </div>
@@ -55,5 +55,21 @@
 
       </section>
     </main>
+
+    <script>
+
+      window.onscroll = function(){ stickyNav() };
+      const navBar = document.getElementById('navbar');
+      let navPosition = navBar.offsetTop;
+      function stickyNav(){
+        if (window.pageYOffset >= navPosition){
+          navBar.classList.add('sticky');
+        }else{
+          navBar.classList.remove('sticky');
+        }
+      }
+
+    </script>
+
   </body>
 </html>
