@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloria | It is me.</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -26,8 +27,12 @@
       </div>
     </nav>
     <main>
-      <section id="about">
+      <span class="anchor" id="about"></span>
+      <section class="about">
         <div class="about-me">
+          <div class="about-me-img">
+            <img src="taiwan.gif" alt="the shape of Taiwan">
+          </div>
           <h2>What about me?</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -37,7 +42,9 @@
           </p>
         </div>
       </section>
-      <section id="projects">
+
+      <span class="anchor" id="projects"></span>
+      <section class="projects">
         <h2>My glorious projects</h2>
         <div class="my-projects">
           <a href="#" class="cell"></a>
@@ -47,7 +54,9 @@
           <a href="#" class="cell"></a>
         </div>
       </section>
-      <section id="contact">
+
+      <span class="anchor" id="contact"></span>
+      <section class="contact">
         <div class="contact-me">
           <div class="left">
             <h2>Gloria Ding</h2>
@@ -70,16 +79,17 @@
     <script>
 
 // sticky navbar --------------------
-      window.onscroll = function(){ stickyNav() };
-      const navBar = document.getElementById('navbar');
-      let navPosition = navBar.offsetTop;
-      function stickyNav(){
-        if (window.pageYOffset >= navPosition){
-          navBar.classList.add('sticky');
-        }else{
-          navBar.classList.remove('sticky');
-        }
+    window.onscroll = function(){ stickyNav() };
+    const navBar = document.getElementById('navbar');
+
+    let navPosition = navBar.offsetTop;
+    function stickyNav(){
+      if (window.pageYOffset >= navPosition){
+        navBar.classList.add('sticky');
+      }else{
+        navBar.classList.remove('sticky');
       }
+    }
 
     </script>
 

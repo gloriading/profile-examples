@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Signika');
+
+
 html,body {
   padding: 0;
   margin: 0;
@@ -16,19 +19,24 @@ a {
 header {
   height: 100vh;
   text-align: center;
-  border: 1px solid;
   position: relative;
 }
 header h1:first-of-type {
   margin-top: 40vh;
+  color: #1A3209;
+  font-family: 'Signika', sans-serif;
 }
-
+header p {
+  color: #355B1A;
+  font-family: 'Signika', sans-serif;
+}
 
 /*------------- navBar ------------*/
 nav {
   display: flex;
   justify-content:space-around;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #1B3409;
+  z-index: 2;
 }
 
 .links {
@@ -40,19 +48,23 @@ nav {
   font-size: 1.2em;
   margin-left: 5px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 1.5px;
+  color: white;
 }
 a.nav-link {
   display: block;
   padding: 18px;
   margin-left: 5px;
   text-decoration: none;
-  color: rgba(0,0,0,0.8);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1em;
+  color: #D0ECBB;
   transition: 0.3s ease;
 }
 a.nav-link:hover {
   background-color: rgba(0,0,0,0.6);
-  color: rgba(255,255,255,0.8);
+  color: white;
 }
 .sticky {
   position: fixed;
@@ -60,19 +72,42 @@ a.nav-link:hover {
   width: 100%
 }
 
+/* put span before section to handle in-page link issue*/
+.anchor{
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+}
+
+
 /*------------- about ------------*/
-section#about,
-section#projects,
-section#contact {
+section.about,
+section.projects,
+section.contact {
   min-height: 100vh;
   padding: 60px;
   border: 1px solid;
+  position: relative;
 }
 
 .about-me p {
   line-height: 2em;
   text-align: justify;
   text-indent: 2em;
+}
+.about-me-img {
+  position: absolute;
+  top: 10%;
+  left: 20px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+.about-me-img img{
+  max-width: 200px;
+  height: auto;
+  opacity: 0.3;
 }
 
 /*------------- projects ------------*/
@@ -102,7 +137,7 @@ section#contact {
   height: 80vh;
 }
 .left {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #122306;
   color: white;
   text-align: center;
 }
@@ -111,7 +146,7 @@ section#contact {
 }
 .left a {
   display:inline-block;
-  color: white;
+  color: #9BD770;
   font-size: 3em;
   transition: 0.5s;
 }
