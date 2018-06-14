@@ -75,8 +75,8 @@ a.nav-link:hover {
 /* put span before section to handle in-page link issue*/
 .anchor{
   display: block;
-  height: 60px;
-  margin-top: -60px;
+  height: 58px;
+  margin-top: -58px;
   visibility: hidden;
 }
 
@@ -112,18 +112,47 @@ section.contact {
 
 /*------------- projects ------------*/
 .my-projects {
+
+}
+.project-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 70vh;
 }
 .cell {
   flex: 1;
-  height: 200px;
   margin: 10px;
-  border: 1px solid rgba(0,0,0,0.4);
-  transition: 1s;
+  border-style: dotted dotted dotted solid;
+  border-width: 1px 1px 1px 4px;
+  border-color: #9BD770;
+
+  transition: 1.5s;
+  overflow: auto;
 }
 .cell:hover {
-  flex: 5;
+  flex: 3;
+}
+.cell h4, .cell p {
+  margin: 0;
+}
+.cell h4 {
+  margin: 10px;
+}
+.cell p {
+  margin-left: 50px;
+  margin: 10px 50px;
+}
+.cell a {
+  text-decoration: none;
+  font-size: 0.8em;
+  padding: 5px;
+  margin-left: 20px;
+  border-bottom: 4px solid #66B032;
+  color: #66B032;
+  font-weight: 200;
+}
+.cell a:hover {
+  box-shadow: -1px -1px 3px grey;
 }
 
 
@@ -143,6 +172,9 @@ section.contact {
 }
 .left h2 {
   margin-top: 30vh;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .left a {
   display:inline-block;
@@ -152,6 +184,9 @@ section.contact {
 }
 .left a:hover {
   transform: translateY(-10px);
+}
+.right {
+  border: 3px solid #122306;
 }
 
 
