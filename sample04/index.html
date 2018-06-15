@@ -219,13 +219,24 @@
 
 
   <script>
+// Helper method
+  function qs(elem){
+    return document.querySelector(elem);
+  }
+  function qsa(elem){
+    return document.querySelectorAll(elem);
+  }
+  function gi(elem){
+    return document.getElementById(elem);
+  }
 
-  // from left to right
-  const openBtnAbout = document.querySelector('.toggle-about');
-  const overlayAbout = document.querySelector('.overlay-about');
-  const closeBtnAbout = document.querySelector('.close-about');
+// from left to right
+  const openBtnAbout = qs('.toggle-about');
+  const overlayAbout = qs('.overlay-about');
+  const closeBtnAbout = qs('.close-about');
 
   openBtnAbout.addEventListener('click', function(e){
+      overlayWel.style.width = "0";
     overlayAbout.style.width = "100%";
   });
 
@@ -233,12 +244,13 @@
     overlayAbout.style.width = "0";
   });
 
-  // from top to bottom
-  const openBtnWork = document.querySelector('.toggle-work');
-  const overlayWork = document.querySelector('.overlay-work');
-  const closeBtnWork = document.querySelector('.close-work');
+// from top to bottom
+  const openBtnWork = qs('.toggle-work');
+  const overlayWork = qs('.overlay-work');
+  const closeBtnWork = qs('.close-work');
 
   openBtnWork.addEventListener('click', function(e){
+      overlayWel.style.width = "0";
     overlayWork.style.height = "100%";
   });
 
@@ -246,12 +258,13 @@
     overlayWork.style.height = "0";
   });
 
-  // from right to left
-  const openBtnEdu = document.querySelector('.toggle-education');
-  const overlayEdu = document.querySelector('.overlay-education');
-  const closeBtnEdu = document.querySelector('.close-education');
+// from right to left
+  const openBtnEdu = qs('.toggle-education');
+  const overlayEdu = qs('.overlay-education');
+  const closeBtnEdu = qs('.close-education');
 
   openBtnEdu.addEventListener('click', function(e){
+      overlayWel.style.width = "0";
     overlayEdu.style.width = "100%";
   });
 
@@ -259,12 +272,13 @@
     overlayEdu.style.width = "0";
   });
 
-  // from upper-left
-  const openBtnPo = document.querySelector('.toggle-portfolio');
-  const overlayPo = document.querySelector('.overlay-portfolio');
-  const closeBtnPo = document.querySelector('.close-portfolio');
+// from upper-left
+  const openBtnPo = qs('.toggle-portfolio');
+  const overlayPo = qs('.overlay-portfolio');
+  const closeBtnPo = qs('.close-portfolio');
 
   openBtnPo.addEventListener('click', function(e){
+      overlayWel.style.width = "0";
     overlayPo.style.width = "100%";
     overlayPo.style.height = "100%";
   });
@@ -274,10 +288,10 @@
     overlayPo.style.height = "0";
   });
 
-  // from bottom to middle
-  const openBtnWel = document.querySelector('.toggle-welcome');
-  const overlayWel = document.querySelector('.overlay-welcome');
-  const closeBtnWel = document.querySelector('.close-welcome');
+// from bottom to middle
+  const openBtnWel = qs('.toggle-welcome');
+  const overlayWel = qs('.overlay-welcome');
+  const closeBtnWel = qs('.close-welcome');
 
   openBtnWel.addEventListener('click', function(e){
     overlayWel.style.width = "80%";
