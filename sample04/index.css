@@ -71,7 +71,7 @@ button span {
   transform: translate(-50%, -50%);
 }
 
-/*  overlay from left */
+/*  About - overlay from left */
 
 .overlay-about {
   position: absolute;
@@ -87,17 +87,24 @@ button span {
   transition: 0.5s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-.close-about, .close-work, .close-education, .close-portfolio, .close-welcome {
+.close-about,
+.close-work,
+.close-education,
+.close-portfolio,
+.close-welcome {
   position: absolute;
-  right: 20px;
-  top:20px;
+  z-index: 3;
+  right: 60px;
+  top: 60px;
   color: white;
   border: 5px solid white;
   padding: 10px;
   transition: 0.5s ease;
 }
 
-.close-about:hover, .close-work:hover, .close-education:hover, .close-portfolio:hover,
+.close-about:hover,
+.close-work:hover,
+.close-education:hover, .close-portfolio:hover,
 .close-welcome:hover
  {
   cursor: pointer;
@@ -110,22 +117,23 @@ button span {
   height: 90%;
   width: 100%;
   text-align: center;
-  padding: 20px 40px;
+  padding: 20px 60px;
 }
 
 .content-box p {
   text-align: justify;
   font-size: 20px;
   line-height: 150%;
+  text-indent: 2em;
 }
 
 .bio img {
-  filter: grayscale(100%);
+  filter: grayscale(60%);
   opacity: 0.5;
   height: 300px;
   float: left;
   margin-right: 20px;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 
 .bio img:hover {
@@ -137,7 +145,7 @@ button span {
 }
 
 .content-box h2 {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Gochi Hand', Arial;
   letter-spacing: 3px;
 }
 
