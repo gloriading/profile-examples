@@ -13,11 +13,21 @@
   </head>
   <body>
     <main>
-      <button class="toggle-about"> B </button>
-      <button class="toggle-work"> W </button>
-      <button class="toggle-education"> E </button>
-      <button class="toggle-portfolio"> P </button>
-      <button class="toggle-welcome"> ? </button>
+      <button class="toggle-about">
+        A<span>bout</span>
+      </button>
+      <button class="toggle-work">
+         W<span>ork History</span>
+       </button>
+      <button class="toggle-education">
+        E<span>ducation</span>
+      </button>
+      <button class="toggle-portfolio">
+        P<span>rojects</span>
+      </button>
+      <button class="toggle-welcome">
+        W<span>elcome</span>
+      </button>
 
       <div class="main-content">
         <i class="fas fa-child fa-10x"></i>
@@ -229,6 +239,7 @@
   function gi(elem){
     return document.getElementById(elem);
   }
+
 
 // from left to right
   const openBtnAbout = qs('.toggle-about');

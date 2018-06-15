@@ -32,8 +32,8 @@ button {
   color: white;
   box-shadow: 0 0 5px rgba(255,255,255,0.8);
   transition: 0.5s ease;
+  overflow: hidden;
 }
-
 button:first-of-type {
   margin-right: 40px;
   background-color: #2d3436;
@@ -50,10 +50,18 @@ button:nth-of-type(4) {
 button:nth-of-type(5) {
   background-color: #82589F;
 }
-
 button:hover {
   cursor: pointer;
-  transform: scale(3) translate(-20%,40%);
+  width: 250px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+button:hover span {
+  display: inline;
+}
+button span {
+  display: none;
 }
 
 .main-content {
