@@ -166,7 +166,9 @@ section.contact {
   height: 80vh;
 }
 .left {
-  background-color: #122306;
+  background: #122306;
+  background: -webkit-linear-gradient(to top, #000000, #0f9b0f);
+  background: linear-gradient(to top, #000000, #0f9b0f); 
   color: white;
   text-align: center;
 }
