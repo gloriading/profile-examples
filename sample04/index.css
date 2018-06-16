@@ -33,6 +33,7 @@ button {
   box-shadow: 0 0 5px rgba(255,255,255,0.8);
   transition: 0.5s ease;
   overflow: hidden;
+  z-index: 3;
 }
 button:first-of-type {
   margin-right: 40px;
@@ -363,4 +364,18 @@ h1.end {
 }
 .five {
   background-image: url('images/p-05.jpg');
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    main {
+      background-color: lightblue;
+      padding-top: 20px;
+    }
+    button {
+      float: none;
+      display: block;
+      margin: 15px 20px;
+    }
+
 }
