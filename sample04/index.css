@@ -307,8 +307,9 @@ h1.end {
 
 .heading h1 {
   font-size: 30px;
-  font-family: 'Gaegu', cursive;
+  font-family: 'Gaegu', Arial;
   margin: 0;
+  color: white;
 }
 
 .content h3 {
@@ -340,7 +341,7 @@ h1.end {
 }
 
 .inner:hover {
-  flex: 2;
+  flex: 4;
 }
 
 .inner:hover .content {
