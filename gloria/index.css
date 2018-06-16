@@ -96,20 +96,30 @@ section.contact {
   text-align: justify;
   text-indent: 2em;
 }
-.about-me-img {
+.about-me-img-taiwan,
+.about-me-img-maple {
   position: absolute;
   top: 10%;
-  left: 20px;
   height: 100%;
   width: 50%;
   z-index: -1;
 }
-.about-me-img img{
-  max-width: 200px;
-  height: auto;
-  opacity: 0.3;
+.about-me-img-taiwan {
+  left: 0%;
 }
-
+.about-me-img-maple {
+  left: 70%;
+}
+.about-me-img-taiwan img,
+.about-me-img-maple img
+{
+  max-width: 300px;
+  height: auto;
+  opacity: 0.1;
+}
+.about-me-img-maple img {
+  transform: rotate(-30deg) scale(1.2);
+}
 /*------------- projects ------------*/
 .my-projects {
 
@@ -125,8 +135,6 @@ section.contact {
   border-style: dotted dotted dotted solid;
   border-width: 1px 1px 1px 4px;
   border-color: #9BD770;
-
-  transition: 1.5s;
   overflow: auto;
 }
 .cell:hover {
@@ -168,7 +176,7 @@ section.contact {
 .left {
   background: #122306;
   background: -webkit-linear-gradient(to top, #000000, #0f9b0f);
-  background: linear-gradient(to top, #000000, #0f9b0f); 
+  background: linear-gradient(to top, #000000, #0f9b0f);
   color: white;
   text-align: center;
 }
