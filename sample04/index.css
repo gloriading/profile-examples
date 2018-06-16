@@ -154,10 +154,12 @@ button span {
 .content-box.welcome {
     padding: 10px 20px;
 }
-
 .content-box.welcome .close-welcome {
-
+  right: 10px;
+  top: 10px;
 }
+
+
 /*  overlay from top  */
 .overlay-work {
   position: absolute;
@@ -384,7 +386,7 @@ h1.end {
 /* Media Queries */
 @media only screen and (max-width: 600px) {
     main {
-      background-color: lightblue;
+      background-color: #3f51b5;
       padding-top: 20px;
     }
     button {
