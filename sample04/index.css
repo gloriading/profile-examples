@@ -31,7 +31,7 @@ button {
   border: 0;
   color: white;
   box-shadow: 0 0 5px rgba(255,255,255,0.8);
-  transition: 0.5s ease;
+  transition: 0.8s ease;
   overflow: hidden;
   z-index: 3;
 }
@@ -126,6 +126,7 @@ button span {
   font-size: 20px;
   line-height: 150%;
   text-indent: 2em;
+  letter-spacing: 1px;
 }
 
 .bio img {
@@ -271,7 +272,7 @@ h1.end {
 	font-family: serif;
 	letter-spacing: 3px;
   text-align: left;
-  margin: -50px 0 0 60%;
+  margin: -50px 0 0 30%;
 }
 
 /* portfolio */
@@ -298,12 +299,14 @@ h1.end {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .heading {
   z-index: 2;
-  border-top: 2px solid maroon;
-  border-bottom: 2px solid maroon;
+  position: absolute;
+  top: 10%;
+  width: 100%;
 }
 
 .heading h1 {
@@ -311,11 +314,14 @@ h1.end {
   font-family: 'Gaegu', Arial;
   margin: 0;
   color: white;
+  text-shadow: 0px 1px 3px black;
+  background-color: rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
 
 .content h3 {
   font-size: 25px;
-  font-weight: 200;
+  text-shadow: 0 1px 5px white;
 }
 .content p {
   text-align: center;
@@ -350,6 +356,10 @@ h1.end {
   transform: translateY(0px);
 }
 
+.inner:hover .heading h1 {
+  font-size: 40px;
+}
+
 .one {
   background-image: url('images/p-01.jpg');
 }
@@ -365,6 +375,11 @@ h1.end {
 .five {
   background-image: url('images/p-05.jpg');
 }
+.fa-heart { color: #f44336; }
+.fa-star { color: #ffee58; }
+.fa-lemon { color: #4caf50; }
+.fa-gift { color: #3f51b5; }
+.fa-moon { color: #ffff00; }
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
@@ -378,4 +393,31 @@ h1.end {
       margin: 15px 20px;
     }
 
+
+}
+
+@media only screen and (max-width: 700px) {
+  .main-flex {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px white;
+    overflow: hidden;
+  }
+  .inner {
+    overflow: hidden;
+  }
+  .heading h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  .heading {
+    right: -80%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .p-icon {
+    transform: scale(0.7);
+  }
 }
