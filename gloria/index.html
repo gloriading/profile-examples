@@ -38,12 +38,8 @@
             <img src="maple.png" alt="the maple leaf">
           </div>
           <h2>What about me?</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <button id="aboutBtn">Play my story</button>
+          <p id="aboutText"></p>
         </div>
       </section>
 
@@ -163,7 +159,44 @@
       }
     }
 
+// about me
+  const aboutBtn = document.getElementById('aboutBtn');
+  const aboutText = document.getElementById('aboutText');
+
+  const x = "Grow up in Taiwan. Learned how to speak English. Moved to BC, Canada with family. Graduated from Simon Fraser University with a MA and BA in economics. Taught English in Taiwan. Had a long stay in Japan. Started to do workouts. Came back to Canada. Attended web developement courses. Here I am. A web developer.  YA!";
+
+  const arr = x.split('');
+  const arrLength = arr.length;
+  let clicked = true;
+  let index = 0;
+  let sentence = "";
+
+  function showContent(){
+    aboutBtn.innerHTML = "Processing..";
+    aboutText.innerHTML = "";
+    index = 0;
+    sentence = "";
+    const showing = setInterval(function(){
+      sentence += arr[index];
+      aboutText.innerHTML = sentence;
+      index++;
+      if(index == arrLength){
+        clearInterval(showing);
+        clicked = true;
+        aboutBtn.innerHTML = "Replay my story";
+      }
+    },200);
+  }
+
+  aboutBtn.addEventListener('click', function(){
+    if(clicked){
+      showContent();
+      clicked = false;
+    }
+  });
+
     </script>
+
     <script src="//www.powr.io/powr.js?external-type=html"></script>
   </body>
 </html>

@@ -102,7 +102,24 @@ section.contact {
 .about-me p {
   line-height: 2em;
   text-align: justify;
-  text-indent: 2em;
+  color: rgba(0,0,0,0.2);
+}
+span.highlight{
+  color: rgba(0,0,0,0.9);
+}
+button#aboutBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  outline: none;
+  border:none;
+  box-shadow: 0px 1px 3px grey;
+}
+button#aboutBtn:hover {
+  box-shadow: 0px -1px 3px grey;
+  cursor: pointer;
 }
 .about-me-img-taiwan,
 .about-me-img-maple {
@@ -233,6 +250,13 @@ span.project-title {
 /* contact */
   .contact-me {
     flex-direction: column;
+  }
+
+/* about  */
+  .about-me-img-taiwan img,
+  .about-me-img-maple img
+  {
+    max-width: 150px;
   }
 
 }
