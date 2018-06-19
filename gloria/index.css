@@ -102,16 +102,15 @@ section.contact {
 .about-me p {
   line-height: 2em;
   text-align: justify;
-  color: rgba(0,0,0,0.2);
+  color: #1B3409;
+  font-size: 1.5em;
 }
-span.highlight{
-  color: rgba(0,0,0,0.9);
-}
+
 button#aboutBtn {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 0.8em;
   letter-spacing: 1px;
   outline: none;
   border:none;
@@ -120,6 +119,9 @@ button#aboutBtn {
 button#aboutBtn:hover {
   box-shadow: 0px -1px 3px grey;
   cursor: pointer;
+}
+#aboutText span {
+  color: deeppink;
 }
 .about-me-img-taiwan,
 .about-me-img-maple {

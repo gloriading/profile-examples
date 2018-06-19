@@ -163,7 +163,7 @@
   const aboutBtn = document.getElementById('aboutBtn');
   const aboutText = document.getElementById('aboutText');
 
-  const x = "Grow up in Taiwan. Learned how to speak English. Moved to BC, Canada with family. Graduated from Simon Fraser University with a MA and BA in economics. Taught English in Taiwan. Had a long stay in Japan. Started to do workouts. Came back to Canada. Attended web developement courses. Here I am. A web developer.  YA!";
+  const x = "Grow up in Taiwan. Learned how to speak English. Moved to Canada with family. Graduated from Simon Fraser University with a MA and BA in economics. Taught English in Taiwan. Long stayed in Japan. Started to do workouts. Came back to Canada. Attended web developement courses. Here I am. <span>A web developer</span>.  YA!";
 
   const arr = x.split('');
   const arrLength = arr.length;
@@ -185,7 +185,7 @@
         clicked = true;
         aboutBtn.innerHTML = "Replay my story";
       }
-    },200);
+    },50);
   }
 
   aboutBtn.addEventListener('click', function(){
