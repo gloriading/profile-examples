@@ -23,8 +23,11 @@ header {
   position: relative;
 }
 header h1:first-of-type {
-  margin-top: 40vh;
+  padding-top: 40vh;
+  margin: 0;
+  font-size: 3em;
   color: #1A3209;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
   font-family: 'Signika', sans-serif;
 }
 header p {
@@ -36,7 +39,7 @@ header p {
 nav {
   display: flex;
   justify-content:space-around;
-  background-color: #1B3409;
+  background-color: #122306;
   z-index: 2;
 }
 
@@ -148,7 +151,9 @@ button#aboutBtn:hover {
   transform: rotate(-30deg) scale(1.2);
 }
 /*------------- projects ------------*/
+.projects {
 
+}
 .project-list {
   display: flex;
   flex-direction: column;
@@ -241,6 +246,10 @@ span.project-title {
 /*------------- media queries  ------------*/
 @media only screen and (max-width: 600px) {
 
+/* header */
+header h1:first-of-type {
+  font-size: 2em;
+}
 /* nav */
   .links {
     justify-content: flex-start;
