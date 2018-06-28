@@ -32,11 +32,13 @@ div.whole-page {
   font-size: 100px;
   font-family: monospace;
   text-transform: uppercase;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 2px;
 }
 
 .page1 h4 {
   font-size: 20px;
+  color:#C71585;
 }
 
 .page1 .fa-arrow-alt-circle-down {
@@ -63,18 +65,25 @@ div.whole-page {
 }
 
 .text-block {
-    position: absolute;
-    bottom: 200px;
-    right: 20px;
-    width: 70%;
-    background-color: RGBA(199, 21, 133, 0.5);
-    color: white;
-    padding: 30px;
-    font-size: 18px;
-    text-align: justify;
-    box-shadow: 1px 1px 10px gray;
+  position: absolute;
+  bottom: 300px;
+  right: 20px;
+  width: 70%;
+  background-color: RGBA(199, 21, 133, 0.8);
+  color: white;
+  padding: 30px;
+  font-size: 18px;
+  text-align: justify;
+  box-shadow: 1px 1px 10px gray;
 }
-
+.text-block h4 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.text-block p {
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
 .page2 img {
   max-height: 100vh;
   z-index: -1;
