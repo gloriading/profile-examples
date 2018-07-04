@@ -14,7 +14,7 @@ a {
  }
 
 div.whole-page {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* page 1 */
@@ -32,7 +32,7 @@ div.whole-page {
   font-size: 100px;
   font-family: monospace;
   text-transform: uppercase;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
   letter-spacing: 2px;
 }
 
@@ -59,14 +59,14 @@ div.whole-page {
   background: linear-gradient(to bottom, #EF629F, #EECDA3);
 }
 
-.page2 .row {
+.page2 .bio-container {
   width: 100%;
   position: relative;
 }
 
 .text-block {
   position: absolute;
-  bottom: 300px;
+  bottom: 200px;
   right: 20px;
   width: 70%;
   background-color: RGBA(199, 21, 133, 0.8);
@@ -85,7 +85,7 @@ div.whole-page {
   letter-spacing: 1px;
 }
 .page2 img {
-  max-height: 100vh;
+  max-height: 80vh;
   z-index: -1;
 }
 
@@ -336,4 +336,13 @@ input[type=text] {
 
 #myBtn:hover {
     transform: translateY(-10px);
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  .page1 h1 {
+    font-size: 50px;
+  }
+
 }
