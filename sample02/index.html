@@ -2,55 +2,77 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>John Doe</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Gloria Ding">
+    <title>John Doe | Web Developer</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Gloria+Hallelujah" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
   <body>
-<!-- left -->
+<!-- left / top-->
     <div class="split left">
-      <div class="centered">
+      <div class="intro">
         <h2>John Doe</h2>
         <p>Web Developer</p>
-        <i class="fab fa-linkedin fa-lg"></i>
-        <i class="fab fa-github fa-lg"></i>
-        <i class="fas fa-at fa-lg"></i>
-        <i class="fab fa-codepen fa-lg"></i>
+        <i class="fab fa-linkedin social-media"></i>
+        <i class="fab fa-github social-media"></i>
+        <i class="fas fa-at social-media"></i>
+        <i class="fab fa-codepen social-media"></i>
       </div>
     </div>
-<!-- right -->
+<!-- right / bottom-->
     <div class="split right">
       <div class="right-centered">
         <div class="bio inner-container" id="bio">
-          <h2>BIO</h2>
+          <h2>
+            BIO
+            <a href="#work">
+              <i class="fas fa-angle-down next"></i>
+            </a>
+          </h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#work">
-            <i class="fas fa-angle-down fa-lg next"></i>
-          </a>
+
         </div>
 
         <div class="work inner-container" id="work">
-            <h2>WORK</h2>
+            <h2>
+              WORK
+              <a href="#education">
+                <i class="fas fa-angle-down next"></i>
+              </a>
+              <a href="#bio">
+                <i class="fas fa-angle-up next"></i>
+              </a>
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#education">
-              <i class="fas fa-angle-down fa-lg next"></i>
-            </a>
+
         </div>
 
         <div class="education inner-container" id="education">
-            <h2>EDUCATION</h2>
+            <h2>
+              EDUCATION
+              <a href="#portfolio">
+                <i class="fas fa-angle-down next"></i>
+              </a>
+              <a href="#work">
+                <i class="fas fa-angle-up next"></i>
+              </a>
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#portfolio">
-              <i class="fas fa-angle-down fa-lg next"></i>
-            </a>
+
         </div>
 
         <div class="portfolio inner-container" id="portfolio">
-            <h2>PORTFOLIO</h2>
+            <h2>
+              PORTFOLIO
+              <a href="#education">
+                <i class="fas fa-angle-up next"></i>
+              </a>
+            </h2>
               <div class="p-container">
                 <div class="box box-drive">
                   <div class="layer-one layer-one-drive">
@@ -93,9 +115,6 @@
                   </div>
                 </div>
               </div>
-              <a href="#bio">
-                <i class="fas fa-angle-double-up fa-lg next"></i>
-              </a>
           </div>
 
       </div>

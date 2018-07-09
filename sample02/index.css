@@ -1,8 +1,11 @@
+/* global */
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  font-family: sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -10,6 +13,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 
 .split {
   height: 100%;
@@ -38,28 +42,37 @@ a {
   text-align: justify;
 }
 
-.centered {
+.intro {
   position: absolute;
   top: 70%;
   left: 60%;
   transform: translate(-50%, -50%);
   text-align: center;
+  /* border: 1px solid; */
 }
 
-.left h2 {
+.intro h2 {
   font-size: 38px;
   text-transform: uppercase;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah', sans-serif;
   letter-spacing: 2px;
   transform: rotate(-10deg);
+  text-shadow: 1px 1px 3px black, 2px 2px 5px white;
+
 }
 
-.left p {
+.intro p {
+  font-size: 18px;
   font-family: 'Bree Serif', serif;
+  letter-spacing: 1px;
+}
+
+.intro .social-media {
+  font-size: 20px;
 }
 
 .right h2 {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah', sans-serif;
 }
 
 .inner-container {
@@ -67,16 +80,23 @@ a {
   padding: 30px;
 }
 
+.inner-container p {
+  line-height: 2;
+  font-size: 20px;
+}
 .bio { background-color: gold; }
 .work { background-color: springgreen; }
 .education { background-color: cornflowerblue; }
 .portfolio { background-color: hotpink; }
 
+
+/* portfolio */
+
 .p-container {
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid white;
 }
-
 
 .box {
   width: 350px;
@@ -191,6 +211,7 @@ a {
 
 /* next page icon */
 .next {
+  font-size: 30px;
   animation: updown 1s ease infinite alternate;
 }
 .next:hover {
@@ -199,4 +220,51 @@ a {
 @keyframes updown {
   from { transform: translateY(5px) };
   to { transform: translateY(-5px) };
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+
+  .split {
+    height: auto;
+    position: inherit;
+    z-index: 1;
+    overflow-x: hidden;
+    padding: 10px;
+  }
+
+  .left {
+    width: auto;
+    height: 100%;
+    background-position: center;
+  }
+
+  .intro {
+    left: 50%;
+  }
+  .intro .social-media {
+    font-size: 30px;
+  }
+  .inner-container p {
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  .right {
+    padding: 0;
+    width: auto;
+    min-height: 100%;
+    height: auto;
+    overflow: auto;
+  }
+
+  /* .right {
+    padding: 0;
+    width: 70%;
+    right: 0;
+    over-flow: scroll;
+    text-align: justify;
+  } */
+
 }
