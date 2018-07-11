@@ -93,24 +93,19 @@ a {
 /* portfolio */
 
 .p-container {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid white;
+  margin: auto;
+  width: 510px;
+  border: 5px solid white;
 }
 
 .box {
-  width: 350px;
-  height: 220px;
+  width: 500px;
+  height: 350px;
   overflow: hidden;
   position: relative;
 }
 
 .layer-one {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,40 +124,32 @@ a {
 .layer-one-photo {
   background-image: url('images/p-photo.jpeg');
 }
-
-.layer-two-drive,
-.layer-two-music,
-.layer-two-game,
-.layer-two-photo
+.layer-two-basic
 {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(178, 190, 195, 0.8);
+  background-color: rgba(178, 190, 195, 1);
   transition: 0.8s ease;
   opacity: 0;
 }
 
-.layer-two-drive h3,
-.layer-two-music h3,
-.layer-two-game h3,
-.layer-two-photo h3
+.layer-two-basic h3
 {
+  font-size: 40px;
   color: rgba(22, 160, 133,1.0);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-family: arial;
   font-weight: 200;
   margin: 20px 20px 10px 40px;
 }
 
-.layer-two-drive h4,
-.layer-two-music h4,
-.layer-two-photo h4,
-.layer-two-game h4
+.layer-two-basic h4
  {
+   font-size: 22px;
   color: rgba(45, 52, 54,1.0);
   font-weight: 100;
   font-family: arial;
@@ -170,11 +157,7 @@ a {
   margin: 0px 0px 0px 40px;
 }
 
-.layer-two-drive hr,
-.layer-two-music hr,
-.layer-two-game hr,
-.layer-two-photo hr
-
+.layer-two-basic hr
 {
   width: 80%;
   border: 0;
@@ -182,10 +165,7 @@ a {
   height: 2px;
 }
 
-.layer-two-drive p,
-.layer-two-music p,
-.layer-two-photo p,
-.layer-two-game p
+.layer-two-basic p
  {
   font-family: Georgia;
   color: rgba(45, 52, 54, 0.8);
@@ -194,18 +174,10 @@ a {
   line-height: 150%;
 }
 
-.box-drive:hover .layer-two-drive {
+.box:hover .layer-two-basic {
   opacity: 1;
 }
-.box-music:hover .layer-two-music {
-  opacity: 1;
-}
-.box-game:hover .layer-two-game {
-  opacity: 1;
-}
-.box-photo:hover .layer-two-photo {
-  opacity: 1;
-}
+
 
 
 
@@ -259,12 +231,34 @@ a {
     overflow: auto;
   }
 
-  /* .right {
-    padding: 0;
-    width: 70%;
-    right: 0;
-    over-flow: scroll;
-    text-align: justify;
-  } */
+  .p-container {
+    width: 100%;
+    border: none;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+  }
+
+  .layer-one {
+    background-image: none;
+  }
+
+  .layer-two-basic
+  {
+    position: inherit;
+    width: auto;
+    height: auto;
+    opacity: 1;
+
+  }
+
+  .box h3 { font-size: 25px;}
+  .box h4 { font-size: 20px;}
+  .box p {
+    font-size: 16px;
+    margin: 10px;
+  }
 
 }
