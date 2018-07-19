@@ -49,6 +49,7 @@ p#logo {
 }
 span.pink {
   color: deeppink;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
 }
 .welcome {
   position: absolute;
@@ -57,7 +58,7 @@ span.pink {
   transform: translate(-50%, -50%);
 }
 .welcome h1 {
-  font-size: 50px;
+  font-size: 80px;
   font-family: 'Ubuntu', 'Lato', sans-serif;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
@@ -120,7 +121,7 @@ h2.year:before {
   background-color: deeppink;
 }
 .cell {
-  border-left: 2px solid deeppink;
+  border-left: 2px solid #ffb4d9;
   padding: 0 0 20px 20px
 }
 .cell:first-of-type {
@@ -177,7 +178,7 @@ h2.year:before {
   text-align: center;
   background-color: rgba(255,255,255,0.5);
   color: deeppink;
-  padding: 3px;
+  padding: 8px 3px;
   margin-left: 3px;
   border-radius: 10px;
   transition: 0.2s;
@@ -238,6 +239,9 @@ h2.year:before {
 
 }
 @media screen and (max-width: 480px){
+  .welcome h1 {
+    font-size: 50px;
+  }
   .about-inner,
   .contact-inner {
     margin: 200px 40px 200px 40px;
@@ -251,5 +255,11 @@ h2.year:before {
   .pro-inner img {
     display:none;
   }
-
+  .menu {
+    display:none;
+  }
+  p#logo {
+    bottom: 100%;
+    transform: rotate(90deg) translate(70%, 400%);
+  }
 }

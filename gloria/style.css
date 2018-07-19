@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu');
+
+/* global */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html,body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  color: whitesmoke;
+}
+a {
+  text-decoration: none;
+}
+.page {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 20px;
+}
+.fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.inner-basic {
+  height: 100vh;
+  display: flex;
+}
+.title {
+  flex: 1;
+  position: relative;
+  border: 2px solid white;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  flex: 3;
+  border: 2px solid lightgreen;
+  z-index: 2;
+}
+
+
+/* logo */
+p#logo {
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid deeppink;
+}
+.pink {
+  color: hotpink;
+}
+
+/* banner */
+.inner-banner {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#banner {
+  background-image: url('images/bg01.jpg');
+}
+#banner h1 {
+  font-size: 10vw;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* about */
+
+
+#about {
+  background-image: url('images/bg02.jpg');
+}
+#project-1 {
+  background-image: url('images/bg03.jpg');
+}
+#project-2 {
+  background-image: url('images/bg04.jpg');
+}
+#contact {
+  background-image: url('images/bg05.jpg');
+}
