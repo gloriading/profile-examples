@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu');
+
+/* global */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html,body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('images/main-bg.jpg');
+  background-attachment: fixed;
+}
+section {
+  min-height: 100vh;
+  border: 1px solid transparent;
+}
+
+p { font-size: 20px; }
+h2 { font-size: 35px; }
+
+/* main */
+main {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+p#logo {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: black;
+  transform: rotate(90deg) translate(-60%, 350%);
+}
+span.pink {
+  color: deeppink;
+}
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome h1 {
+  font-size: 50px;
+  font-family: 'Ubuntu', 'Lato', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.menu {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  text-align: left;
+}
+.menu li {
+  margin-top: 5px;
+}
+
+.menu a {
+  color: inherit;
+}
+.menu a:hover {
+  color: hotpink;
+}
+.menu a.active {
+  color: deeppink;
+}
+
+/* about */
+#about {
+  background-color: rgba(44, 58, 71, 0.5);
+  color: whitesmoke;
+}
+.about-inner {
+  margin: 200px;
+}
+.about-inner p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* education */
+#education {
+  background-color: rgba(24, 44, 97, 0.5);
+  color: whitesmoke;
+}
+.edu-inner {
+  margin: 50px 150px 50px 200px;
+}
+h2.year {
+  position: relative;
+  font-size: 30px;
+  color: rgba(255,20,147,0.8);
+}
+h2.year:before {
+  content: '';
+  position: absolute;
+  left: -27px;
+  width: 10px;
+  height: 10px;
+  background-color: deeppink;
+}
+.cell {
+  border-left: 2px solid deeppink;
+  padding: 0 0 20px 20px
+}
+.cell:first-of-type {
+  margin-top: 20px;
+}
+.cell h3 {
+  font-size: 22px;
+}
+.cell p {
+  font-size: 18px;
+  text-indent: 1em;
+}
+
+
+/* projects */
+#projects {
+  background-color: rgba(211, 84, 0, 0.5);
+  color: whitesmoke;
+}
+.pro-inner {
+  margin: 50px 150px 50px 200px;
+}
+.pro-inner img {
+  width: 100%;
+}
+.project {
+  margin: 10px 0;
+  background-color: rgba(255,255,255,0.3);
+  color: rgba(44, 62, 80,1.0);
+  padding: 10px;
+}
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgba(44, 62, 80,1.0);
+  text-align: center;
+  font-family: 'Ubuntu', 'Lato', sans-serif;
+}
+.project p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: rgba(30, 39, 46,1.0);
+}
+.project p:before {
+  content:"• ";
+}
+.project .links {
+  margin-top: 20px;
+  display: flex;
+}
+.project a {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  color: deeppink;
+  padding: 3px;
+  margin-left: 3px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.project a:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* contact */
+#conatct {
+  position: relative;
+}
+.contact-inner {
+  margin: 200px;
+  color: whitesmoke;
+}
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social-links a {
+  font-size: 80px;
+  color: rgba(255,255,255,0.6);
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: rgba(255,255,255,0.9);
+}
+
+
+
+/* resoponsive */
+
+@media screen and (max-width: 768px){
+  .about-inner,
+  .contact-inner {
+    margin: 200px 120px;
+  }
+  .edu-inner {
+    margin: 50px 100px 50px 120px;
+  }
+  h2.year {
+    font-size: 25px;
+  }
+  .cell h3 {
+    font-size: 20px;
+  }
+  .cell p {
+    font-size: 16px;
+  }
+  .pro-inner {
+    margin: 50px 100px 50px 120px;
+  }
+
+}
+@media screen and (max-width: 480px){
+  .about-inner,
+  .contact-inner {
+    margin: 200px 40px 200px 40px;
+  }
+  .edu-inner {
+    margin: 50px 40px 50px 40px;
+  }
+  .pro-inner {
+    margin: 50px 40px 50px 40px;
+  }
+  .pro-inner img {
+    display:none;
+  }
+
+}

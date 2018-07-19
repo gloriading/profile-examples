@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gloria's portfolio webpage.">
+    <meta name="keywords" content="Web Designer, Web Developer">
+    <meta name="author" content="Gloria Ding">
+    <title>Gloria Ding | Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+
+  </head>
+  <body>
+<!-- main     -->
+  <main id="top">
+    <p id="logo">
+      &copy; <span class="pink">Glorious</span> Web Design
+    </p>
+    <div class="menu" id="menu">
+      <ul>
+        <li class="top">
+          <a class="menu-item" href="#top">
+            top
+          </a>
+        </li>
+        <li class="about">
+          <a class="menu-item" href="#about">about</a>
+        </li>
+        <li class="edu">
+          <a class="menu-item" href="#education">
+            education
+          </a>
+        </li>
+        <li class="projects">
+          <a class="menu-item" href="#projects">
+            projects
+          </a>
+        </li>
+        <li class="contact">
+          <a class="menu-item" href="#contact">
+            contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="welcome">
+      <h1>Hi. I'm</h1>
+      <h1>Gloria Ding</h1>
+      <h4>Web Developer</h4>
+    </div>
+  </main>
+
+<!-- about   -->
+  <section id="about">
+    <div class="about-inner">
+      <h2>About Me</h2>
+      <p> I am a Web developer who loves exploring and learning new technologies. During my free time, I enjoy sharing my knowledge of coding. And I love movies, games, and talks.</p>
+      <p>Technologies I use: HTML5, CSS, JavaScript, jQuery, Ajax, Bootstrap, React.js, Ruby on Rails, PostgreSQL, GitHub...</p>
+    </div>
+  </section>
+<!-- education   -->
+  <section id="education">
+    <div class="edu-inner">
+      <h2>Education</h2>
+
+      <div class="cell">
+        <h2 class="year">Current + Future</h2>
+        <h3><i class="fas fa-infinity"></i></h3>
+      </div>
+      <div class="cell">
+        <h2 class="year">2018</h2>
+        <h3>Codecore Developer Bootcamp</h3>
+        <p>Web Development Certificate</p>
+      </div>
+      <div class="cell">
+        <h2 class="year">2017</h2>
+        <h3>The Canadian College of Linguistics</h3>
+        <p>TEFL/TESOL certificate</p>
+      </div>
+      <div class="cell">
+        <h2 class="year">2009</h2>
+        <h3>Simon Fraser University</h3>
+        <p>Master of Arts, Economics</p>
+      </div>
+      <div class="cell">
+        <h2 class="year">2008</h2>
+        <h3>Simon Fraser University</h3>
+        <p>Bachelor of Arts, Economics</p>
+        <p>Business Administration Minor</p>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="pro-inner">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Move</h3>
+        <img src="images/project-01.png" alt="Move">
+        <p>MOVE is a web app for visualizing exercise records. Users can actually see their achievements and obtain/maintain exercise habits.</p>
+        <p>Built with Ruby on Rails, JavaScript, AJAX, jQuery, HTML, CSS, Bootstrap.</p>
+        <div class="links">
+          <a href="https://healthymove.herokuapp.com/" target="_blank">Project Link</a>
+          <a href="https://github.com/gloriading/move" target="_blank">Source Code</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Product Promotion</h3>
+        <img src="images/project-02.png" alt="Product Promotion">
+        <p>Single-page layout with in-page links to ease the navigation.</p>
+        <p>Built with HTML, CSS, Bootstrap4, jQuery</p>
+        <div class="links">
+          <a href="https://gloriading.github.io/landing-pages/single-page/product-promo-two.html" target="_blank">Project Link</a>
+          <a href="https://github.com/gloriading/landing-pages/blob/master/single-page/product-promo-two.html" target="_blank">Source Code</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Personal Blog</h3>
+        <img src="images/project-03.png" alt="Blog">
+        <p>Single-page layout with fixed background and scrolling body to engage the audience.</p>
+        <p>Built with HTML, CSS</p>
+        <div class="links">
+          <a href="https://gloriading.github.io/landing-pages/single-page/Blog_2/index.html" target="_blank">Project Link</a>
+          <a href="https://github.com/gloriading/landing-pages/tree/master/single-page/Blog_2" target="_blank">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="contact-inner">
+      <h2>Contact Me</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/gloriading/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:gloria.hc.ding@gmail.com"><i class="fas fa-at"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+  // Helper method
+  function gi(elem){
+    return document.getElementById(elem);
+  }
+
+  function qs(elem){
+    return document.querySelector(elem);
+  }
+
+  function qsa(elem){
+    return document.querySelectorAll(elem);
+  }
+
+
+  const menu = gi('menu');
+  const menuItems = qsa('.menu-item');
+
+  function selectMenuItem(){
+    menuItems.forEach(menuItem => {
+      menuItem.addEventListener('click',function(e){
+        deSelect();
+        this.classList.add('active');
+      });
+    });
+  }
+
+  function deSelect(){
+    menuItems.forEach(menuItem=>{
+      menuItem.classList.remove('active');
+    });
+  }
+
+  selectMenuItem();
+  </script>
+  </body>
+</html>
